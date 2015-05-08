@@ -1,0 +1,144 @@
+
+@font-face {
+  font-family: 'WeblySleekUISemibold';
+  src: url('../fonts/weblysleekuisb.eot');
+  src: url('../fonts/weblysleekuisb.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/weblysleekuisb.woff') format('woff'),
+       url('../fonts/weblysleekuisb.ttf') format('truetype'),
+       url('../fonts/weblysleekuisb.svg#WeblySleekUISemibold') format('svg');
+}
+@font-face {
+  font-family: 'WeblySleekUISemilight';
+  src: url('../fonts/weblysleekuisl.eot');
+  src: url('../fonts/weblysleekuisl.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/weblysleekuisl.woff') format('woff'),
+       url('../fonts/weblysleekuisl.ttf') format('truetype'),
+       url('../fonts/weblysleekuisl.svg#WeblySleekUISemilight') format('svg');
+}
+
+/**** CSS FONT ****/
+body {font-family: 'WeblySleekUISemilight', Helvetica, Arial, sans-serif; font-size: 13px;}
+h1, h2, h3, h4, h5, h6 { font-family: 'WeblySleekUISemibold',sans-serif; line-height: 1.5em;}
+h1 {font-size: 26px; margin: 3px 0 12px 0; color: #2e160a;}
+h2 {font-size: 22px;}
+h3 {font-size: 13px; color: #d23028;font-weight: bold;}
+h4 {}
+h5 {font-size: 13px; font-weight: bold;}
+h6 {font-size: 13px; font-weight: bold;}
+ul {list-style: none; }
+img {max-width: 100%;}
+div {box-sizing: border-box;  }
+.btn {padding: 4px 15px; background: #e44315; color: #fff;} 
+.btn:hover {color: #fff;  }  
+.btn i {padding-right: 3px;}
+a:hover, a:focus, a:active {text-decoration: none; color: #fff;}
+label { font-weight: normal;}
+.form-control {height: 30px; font-size: 13px;   padding: 2px 12px;}
+.highlite {color: #d23028;}
+.head-tt { font-size: 13px; font-weight: bold;}
+.wrapper {}
+.main-content {margin-top: 125px;}
+
+/**** HEADER General ****/ 
+.navbar-default {background: #fff; border: none;}
+.navbar-default .container {}
+.navbar-default .inner-content {border-bottom: 3px solid #d23028;height: 105px; padding-top: 18px;}
+.navbar .brand {    float: left;  background: url(../images/logo.png) no-repeat;  width: 215px;  height: 70px;  background-size: 100%;   display: inline-block;}
+.navbar-nav { margin-top: 12px;} 
+.navbar-default .navbar-nav>li>a {  font-size: 17px; color: #333; font-weight: bold;}
+.navbar-default .navbar-nav>li>a:hover {color: #d23028;}
+.navbar-default .navbar-nav>.active>a {background-color: transparent;}
+ 
+
+/*** MAIN-CONTENT Homepage ***/ 
+.sec_search_filter  {background: #edeeef;  padding: 30px; margin-bottom: 20px;}
+.sec_search_filter > h1 {  font-weight: bold; opacity: 0.8; font-size: 25px; margin-top: 0 0 18px 0;} 
+.sec_search_filter label { color: #646464;}
+.rowForm-searh {margin-bottom: 8px;}
+.rowForm-searh .form-inline .form-group {width: 50%; }
+.rowForm-searh .form-inline .form-control {max-width: 100%;} 
+.rowSelect_land {margin-bottom: 10px;}
+.rowSelect_land label {padding-top: 3px;}
+.rowSelect_land select.form-control {max-width: 360px;}
+.head-tt {border-bottom: 3px solid #b2b2b2; line-height: 30px;}
+.department-item {border-bottom: 1px solid #b2b2b2; padding-bottom: 12px;}
+.department-item h3 { color: #000;font-weight: bold; margin-top: 12px;}
+.department-item h4 {font-size: 13px;   margin-top: 3px;  margin-bottom: 5px;font-weight: bold;}
+.department-item p {line-height: 22px; color: #646464;}
+.department-item .btn {  padding-top: 2px;  padding-bottom: 2px;  font-size: 12px;  line-height: 20px;}
+.firma-kort-btn {border-radius: 0; padding-left: 10px; padding-right: 10px;
+	background: #ffc019; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffc019 1%, #ffd451 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffc019), color-stop(100%,#ffd451)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffc019 1%,#ffd451 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffc019 1%,#ffd451 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffc019 1%,#ffd451 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffc019 1%,#ffd451 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc019', endColorstr='#ffd451',GradientType=0 ); /* IE6-9 */
+}
+.firma-kort-btn img {float: left; margin-right: 5px;}
+.see-price-btn {border-radius: 0; padding-left: 10px; padding-right: 10px;}
+
+.article-left {}
+.article-left h2 {margin-top: 5px;line-height: 30px;}
+.article-left h2 a {font-size: 21px; color: #2b1608;}
+.facebook-box .wrap-fb {text-align: right;}
+
+/*** FOOTER ***/
+footer {background: #2b1809; padding: 20px 0 10px 0; margin-top: 30px;}
+footer p { color: #fff; line-height: 20px;}
+footer a { color: #fff;}
+footer a:hover{color: #d23028;}
+footer .col-sm-4 {text-align: right;}
+
+/*** Nicker 05-05-2015 ***/
+::-moz-selection{color:#fff;text-shadow:none;background:#a2140d}
+::selection{color:#fff;text-shadow:none;background:#a2140d}
+a {color: #cc3325;}
+a:hover, a:focus, a:active {color: #cc3325;}
+.btn:hover {background-color: #aa300d;}
+.red {color: #d23028;} .pad0 {padding-bottom: 0;} .mar0 {margin: 0;} .mr10 {margin-right: 10px;} .mr0 {margin-right: 0 !important;} .mt10 {margin-top: 10px;} .mt20 {margin-top: 20px;}
+.borb {border-bottom: 1px solid #edeeef;} .mb20 {margin-bottom: 20px;} .pb30 {padding-bottom: 30px;} .underline {text-decoration: underline;}
+.info .highlite {display: inline-block; margin-top: 10px;}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {background: #fff; color: #e44315;}
+.dropdown-menu {background: #e7e8e9; border: none; box-shadow: none; min-width: 268px;}
+.dropdown-menu>li>a {text-transform: none; font-size: 14px; font-family: 'WeblySleekUISemilight'; border-bottom: 1px dotted #bbb; padding: 6px 20px;}
+.dropdown-menu>li:last-child>a {border-bottom: 0;}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {background: transparent; color: #d23028;}
+.dropdown-menu > li > a::before {content: '\f054'; font-family: 'FontAwesome'; font-size: 12px; color: #b2b2b2; padding-right: 5px;}
+.dropdown-menu > li:hover > a::before {color: #d23028;}
+
+
+.template {background: #edeeef; padding: 30px; margin-bottom: 20px;}
+.item-departments {background: #fff; padding: 10px 20px 20px 20px; width: 49.4%; margin-right: 10px; margin-bottom: 10px;}
+.item-departments h5 {margin-top: 0; margin-bottom: 5px;}
+.item-departments p {color: #646464;}
+.item-departments .link {margin-bottom: 0; margin-top: 15px;}
+.item-departments .link:hover {text-decoration: underline;}
+.departments .nav-tabs {border: none; margin-bottom: 10px;}
+.departments .nav-tabs > li {-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;background-color: #d5d6d7; margin-right: 5px; margin-bottom: 0; width: 19%;}
+.departments .nav-tabs > li > a {color: black; margin-right: 0; border-radius: 4px; padding: 8px 20px; text-align: center; font-size: 16px;}
+.departments .nav-tabs>li>a:hover {background-color: #d23028; color: white; margin-right: 0;}
+.departments .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {background-color: #d23028; border: none; color: white;}
+.departments .btn-seeprice {font-size: 11px; padding: 4px 10px;}
+ul.breadcrumb {background: transparent; padding-left: 0;}
+ul.breadcrumb li a {font-size: 13px; color: #646464;}
+.breadcrumb > li + li::before {content: '\f105'; font-family: 'FontAwesome'; padding-right: 8px;}
+.content-left ul.nav-left {padding-left: 0;}
+ul.nav-left li a {text-transform: none; font-size: 14px; font-family: 'WeblySleekUISemilight'; border-bottom: 1px dotted #bbb; padding: 6px 10px; color: #333; display: block;}
+ul.nav-left li:hover a {color: #d23028;}
+ul.nav-left > li.active a {color: #d23028;}
+ul.nav-left > li.active > a::before {color: #d23028;}
+ul.nav-left > li > a::before {content: '\f054'; font-family: 'FontAwesome'; font-size: 12px; color: #b2b2b2; padding-right: 5px;}
+ul.nav-left > li:hover > a::before {color: #d23028;}
+.content-right h2 {margin-top: 0;}
+.table {margin: 20px 0;}
+.table2 {width: 50%;}
+.table thead tr th {background: #eee; text-align: center;}
+.table tr td {text-align: center;}
+.table3 {background: #ededed; color: #000;}
+.table3 tr td, .table3 thead tr th {border: 2px solid #000 !important;}
+.btnCredit {text-transform: uppercase; font-size: 18px; font-weight: bold; padding-right: 30px; padding-left: 30px; margin-top: 20px; margin-right: 10px;}
+.credit h3 {text-transform: uppercase; text-decoration: underline; font-size: 18px; color: #cd0404;}
+
+

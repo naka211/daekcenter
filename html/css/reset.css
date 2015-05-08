@@ -1,0 +1,30 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */  /* v1.0 | 20080212 */ 
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend, button,
+table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; background: transparent; color:#4c4c4c;}
+body {line-height: 1;	margin: 0 auto; font-family: "Helvetica Neue", Arial,sans-serif; font-size: 13px; background: #fff;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {	content: '';}
+p {	margin: 0.7em 0 0.4em 0;	line-height: 1.45em; }
+ul, ol { list-style: none;} 
+ins, a { text-decoration: none;	}
+del {	text-decoration: line-through;}
+table {	border:0; 	border-collapse: collapse;	border-spacing:0;	empty-cells:show; 	font-size:100%; }
+table { margin-bottom: 5px; width: 100%; }
+th { font-weight: bold; }
+thead th { background: #f2e7d4; }
+tfoot { font-style: italic; }
+caption { background: #eee; }
+/* Clearfix -------------------------------------------------------------*/
+* html .clearfix {	height: 1%; /* IE5-6 */}
+html[xmlns] .clearfix { /* O */	display: block;  }
+.clearfix:after { /* FF, O, etc. */	content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+*:first-child+html .clearfix { /* IE 7 */	display: inline-block;}
+.clear, .divider {clear: both;} 
+/* Mis.-------------------------------------------------------------*/ 
+input, textarea { color: #777777;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 14px;   color: #777777;font-family: "Helvetica Neue", Arial,sans-serif; } /*--- Chrome---*/
+input:-moz-placeholder, textarea:-moz-placeholder { font-size: 14px;     color: #777777; font-family: "Helvetica Neue", Arial,sans-serif;}
+input:-ms-input-placeholder, textarea:-moz-placeholder {  font-size: 14px;    color: #777777;font-family: "Helvetica Neue", Arial,sans-serif;}
+input.txtinput::-moz-placeholder { color: #777777;opacity: 1;}
+input.txtinput:-moz-placeholder { color: #777777;opacity: 1;} 
+ 
