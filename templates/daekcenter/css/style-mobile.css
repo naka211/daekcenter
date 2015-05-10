@@ -1,0 +1,67 @@
+/**** CSS ****/
+@media screen and (min-width: 992px) {  
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+	.rowForm-searh .col-sm-6 {width: 100%;}
+	.navbar-default div.inner-content {height: 112px;}
+	.navbar-default .navbar-collapse {margin-top: -12px;}
+	.navbar-default .inner-content { }   
+}
+
+
+@media screen and (max-width: 991px) { 
+	.navbar-default .inner-content { height: 75px; padding-top: 10px;}
+	.navbar .brand {width: 160px;}
+	.navbar-nav {  margin-top: 0;}
+	.navbar-default .navbar-nav>li>a { font-size: 16px; font-weight: bold; padding: 12px 10px; font-weight: normal;}
+	.rowForm-searh .form-inline .form-group { float: left;  margin-right: 5px;}
+	.facebook-box {margin-top: 25px;}
+	.facebook-box .wrap-fb {text-align: center;}
+	footer p {text-align: center;}
+
+	 
+}
+
+@media screen and (max-width: 767px) {
+	.wrap-map {margin-top: 15px;}
+	.navbar-default .navbar-collapse {width: 100%; border: 1px solid #d23028;}
+	.main-content { margin-top: 90px;}
+	
+}
+
+@media only screen and (max-width: 640px)  {
+	h1 {  font-size: 20px;} 
+	.article-left h2 a {font-size: 18px; line-height: 20px;}
+
+ }
+ 
+
+@media only screen and (max-width: 480px)  {
+	.sec_search_filter {padding: 15px;}
+	.rowForm-searh {  margin-bottom: 0;}
+ 
+}
+ 
+
+@media only screen and (max-width: 360px)  {
+	 .col-xs-6 {width: 100%;}
+	 .opening-hours {  margin-top: 8px;}
+	 
+}
+
+@media screen and (max-width: 768px) {
+	.item-departments {width: 100%; text-align: center;}
+	.departments .nav-tabs > li {width: 100%; margin-bottom: 5px;}
+	.table2 {width: 100%;}
+	.btnCredit {font-size: 15px; margin-right: 0; display: block; width: 100%;}
+	.main-map {position: absolute; top: 100px; left: 0; margin: 0 15px;}
+	.main-map img {width: 100%;}
+	.map-detail {margin-top: 360px;}
+}
+@media screen and (max-width: 640px) {
+	.map-detail {margin-top: 520px;}
+}
+@media screen and (max-width: 360px) {
+	.map-detail {margin-top: 340px;}
+}
