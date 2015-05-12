@@ -16,7 +16,7 @@ if (version_compare(PHP_VERSION, '5.3.10', '<'))
  * define() is used in the installation folder rather than "const" to not error for PHP 5.2 and lower
  */
 define('_JEXEC', 1);
-
+error_reporting(0);
 if (file_exists(__DIR__ . '/defines.php'))
 {
 	include_once __DIR__ . '/defines.php';

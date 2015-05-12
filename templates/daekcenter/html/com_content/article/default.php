@@ -8,18 +8,17 @@
  */
 
 defined('_JEXEC') or die;
-
-$app = JFactory::getApplication();
-$templateparams = $app->getTemplate(true)->params;
-$images = json_decode($this->item->images);
-$urls = json_decode($this->item->urls);
-JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
-JHtml::_('behavior.caption');
-
-// Create shortcut to parameters.
-$params = $this->item->params;
-
 ?>
+{module Breadcrumbs}
+<section class="credit borb mb20 pb30">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1><?php echo $this->escape($this->item->title); ?></h1>
+			<?php echo $this->item->text; ?>
+		</div>
+	</div>
+</section>
+<?php return;?>
 <article class="item-page<?php echo $this->pageclass_sfx?>">
 <?php if ($this->params->get('show_page_heading')) : ?>
 

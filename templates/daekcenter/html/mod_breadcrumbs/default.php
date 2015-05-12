@@ -10,7 +10,7 @@
 defined('_JEXEC') or die;
 ?>
 
-<div class = "breadcrumbs<?php echo $moduleclass_sfx; ?>">
+<ul class = "breadcrumb<?php echo $moduleclass_sfx; ?>">
 <?php if ($params->get('showHere', 1))
 	{
 		echo '<span class="showHere">' .JText::_('MOD_BREADCRUMBS_HERE').'</span>';
@@ -40,23 +40,25 @@ defined('_JEXEC') or die;
 		// Render all but last item - along with separator
 		if (!empty($item->link))
 		{
-			echo '<a href="' . $item->link . '" class="pathway">' . $item->name . '</a>';
+			echo '<li><a href="' . $item->link . '" class="pathway">' . $item->name . '</a></li>';
 		}
 		else
 		{
-			echo '<span>' . $item->name . '</span>';
+			//echo '<span>' . $item->name . '</span>';
+			echo '<li class="active">' . $item->name . '</li>';
 		}
 
 		if (($key != $penult_item_key) || $show_last)
 		{
-			echo ' '.$separator.' ';
+			//echo ' '.$separator.' ';
 		}
 
 	}
 	elseif ($show_last)
 	{
 		// Render last item if reqd.
-		echo '<span>' . $item->name . '</span>';
+		//echo '<span>' . $item->name . '</span>';
+		echo '<li class="active">' . $item->name . '</li>';
 	}
 	endforeach; ?>
-</div>
+</ul>

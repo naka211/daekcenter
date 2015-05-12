@@ -38,10 +38,23 @@ $tmpl = JURI::base().'templates/daekcenter/';
                   $(".fancybox-skin").addClass('wrap_send_gift');  
                  }
             }); 
+			
+			$(".parent>a").addClass("dropdown-toggle");
+			$(".parent>a").attr("data-toggle", "dropdown");
+			$(".nav-child").addClass("dropdown-menu");
+			$(".parent>a").append('<b class="caret"></b>');
         });
     </script>
     </head>
     <body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=755854121175731";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="wrapper">
 		<header id="header"> 
 			<!--Navigation -->
@@ -55,23 +68,7 @@ $tmpl = JURI::base().'templates/daekcenter/';
 						
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse pull-right" id="navigation">
-							<ul class="nav navbar-nav">
-								<li><a href="index.php">DANMARKSKORT</a></li>
-								<li><a href="departments.php">AFDELINGER</a></li>
-								<li><a class="dropdown-toggle" data-toggle="dropdown" href="tyre-riminfo.php">DÆK- OG FÆLG INFO <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="tyre-riminfo.php">Teknisk info – Dæk</a></li>
-										<li><a href="tyre-riminfo.php">Teknisk info – Fælge</a></li>
-										<li><a href="tyre-riminfo.php">Teknisk info – Hjul</a></li>
-										<li><a href="tyre-riminfo.php">EU-mærkning af dæk</a></li>
-										<li><a href="tyre-riminfo.php">Vedligeholdelsesguide dæk</a></li>
-										<li><a href="tyre-riminfo.php">Udskiftning af dæk</a></li>
-										<li><a href="tyre-riminfo.php">Vinterdæk regler</a></li>
-										<li><a href="tyre-riminfo.php">Bliv forhandler</a></li>
-									</ul>
-								</li>
-								<li><a href="credit.php">FÅ KREDIT - RENTEFRIT</a></li>
-							</ul>
+							{module Main Menu}
 						</div>
 						<!-- /.navbar-collapse --> 
 					</div>
@@ -83,6 +80,8 @@ $tmpl = JURI::base().'templates/daekcenter/';
 		<!-- /#header -->
 		<div class="main-content">
 			<div class="container">
+				<jdoc:include type="component" />
+				<?php /*?>
 				<section class="sec_search_filter">
 					<div class="row">
 						<div class="col-sm-6 map-detail">
@@ -189,17 +188,18 @@ $tmpl = JURI::base().'templates/daekcenter/';
 					</div>
 					<!--row--> 
 				</section>
+				<?php */?>
 				<!-- sec_search_filter -->
 				
 				<section class="sec_content_bot">
 					<div class="row">
 						<div class="col-sm-7 article-left">
-							<h2><a href="#"> HELE DANMARKS DÆKCENTER - <span class="highlite">WWW.DÆKCENTER.NU</span> SOMMERDÆK - VINTERDÆK - FÆLGE</a></h2>
-							<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit donec odio quisque volutpat mattis eros nullam malesuada erat ut turpis suspendisse urna nibh viverra non semper suscipit posuere a pede donec nec justo eget felis facilisis fermentum aliquam porttitor mauris sit amet orci aenean dignissim pellentesque felis morbi in sem quis dui placerat ornare pellentesque odio nisi, euismod in pharetra a ultricies in diam sed arcu cras consequat lorem ipsum dolor sit amet.</p>
-							<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing commodo quis gravida id, est sed lectus. </p>
+							{article 1}{text}{/article}
 						</div>
 						<div class="col-sm-5 facebook-box">
-							<div class="wrap-fb"> <img src="<?php echo $tmpl;?>images/facebook-box.jpg"> </div>
+							<div class="wrap-fb">
+								<div class="fb-page" data-href="https://www.facebook.com/Daekcenter" data-width="405" data-height="224" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Daekcenter"><a href="https://www.facebook.com/Daekcenter">Dækcenter</a></blockquote></div></div>
+							</div>
 						</div>
 					</div>
 				</section>
