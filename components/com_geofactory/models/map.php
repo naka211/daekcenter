@@ -246,7 +246,8 @@ class GeofactoryModelMap extends JModelItem{
 		$locate_me		= '<input id="gf_locate_me" 	type="button" 	value="'.JText::_('COM_GEOFACTORY_LOCATE_ME').'" 		onClick="'.$mapVar.'.LMBTN();" />';
 		$save_me 		= '';//'<input id="gf_save_me" 		type="button" 	value="'.JText::_('COM_GEOFACTORY_SAVE_ME').'"			onClick="axSavePos(locateMarker.getPosition().lat(), locateMarker.getPosition().lng(), '.$mapVar.');" />';
 		$reset_me		= '';//plus pour l'instant <input id="gf_reset_me" 		type="button" 	value="'.JText::_('COM_GEOFACTORY_RESET_ME').'"		onClick="axSavePos(255, 255, '.$mapVar.');" />';
-		$near_me		= '<input id="gf_near_me" 		type="button"	value="'.JText::_('COM_GEOFACTORY_NEAR_ME').'"			onClick="'.$mapVar.'.NMBTN();" />';
+		//$near_me		= '<input id="gf_near_me" 		type="button"	value="'.JText::_('COM_GEOFACTORY_NEAR_ME').'"			onClick="'.$mapVar.'.NMBTN();" />';
+		$near_me		= '<button id="gf_near_me" onclick="'.$mapVar.'.NMBTN();" class="btn btnNearme" type="button">NÆR MIG</button>';
 		$save_me_full 	= '';//plus pour l'instant '<input id="gf_save_me_full"	type="button" 	value="'.JText::_('COM_GEOFACTORY_SAVE_ME_FULL').'"	onClick="axSavePos(locateMarker.getPosition().lat(), locateMarker.getPosition().lng(), '.$mapVar.', true);" />';
 		$reset_map 		= '<input type="button" onclick="'.$mapVar.'.SLRES();" id="gf_reset_rad_btn" value="'.JText::_('COM_GEOFACTORY_RESET_MAP').'"/>';
 
@@ -465,20 +466,21 @@ class GeofactoryModelMap extends JModelItem{
 
 		// récupère la valeur du champs de recherche du module qui n'est pas sur cette page et le met dans la session
 		$gf_mod_search	= $app->input->getString('gf_mod_search', null);
-		$form_start		= '<form id="gf_radius_form" onsubmit="'.$mapVar.'.SLFI();return false;">' ;
-		$input 			= '<input type="text" id="addressInput" value="'.$gf_mod_search.'" class="gfMapControls"/>' ;
+		$form_start		= '<form id="gf_radius_form" onsubmit="'.$mapVar.'.SLFI();return false;" class="form-inline">' ;
+		$input 			= '<div class="form-group"><input type="text" id="addressInput" value="'.$gf_mod_search.'" class="gfMapControls form-control" placeholder=""/></div>' ;
 		$dists 			= $this->_getRadiusDistances($map, $gf_mod_search) ; 
-		$search_btn		= '<input type="button" onclick="'.$mapVar.'.SLFI();" id="gf_search_rad_btn" value="'.JText::_('COM_GEOFACTORY_SEARCH').'"/>';
+		//$search_btn		= '<input type="button" onclick="'.$mapVar.'.SLFI();" id="gf_search_rad_btn" value="'.JText::_('COM_GEOFACTORY_SEARCH').'"/>';
+		$search_btn		= '<button type="button" class="btn" onclick="'.$mapVar.'.SLFI();" id="gf_search_rad_btn"><i class="fa fa-search"></i>SØG NU</button>';
 		$divsOnMapGo	= '<div id="gf_map_panel" style="padding-top:5px;display:none;" ><div id="gf_radius_form" style="margin:0;padding:0;">' ;
 		$radius_form 	= '' ;
 
 		if ($map->radFormMode==0){// default
 			$radius_form.= 	$form_start ;
-			$radius_form.= 		'<label for="addressInput">'.JText::_('COM_GEOFACTORY_ADDRESS') .'</label>';
+			//$radius_form.= 		'<label for="addressInput">'.JText::_('COM_GEOFACTORY_ADDRESS') .'</label>';
 			$radius_form.= 		$input ;
-			$radius_form.= 		'<label for="radiusSelect">'.JText::_('COM_GEOFACTORY_RADIUS').'</label>';
-			$radius_form.= 		$dists ;
+			//$radius_form.= 		'<label for="radiusSelect">'.JText::_('COM_GEOFACTORY_RADIUS').'</label>';
 			$radius_form.=		$search_btn;
+			$radius_form.= 		$dists ;
 			$radius_form.=	'</form>';
 		}
 		if ($map->radFormMode==1){//snipet

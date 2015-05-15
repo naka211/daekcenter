@@ -55,7 +55,7 @@
 	.departments .nav-tabs > li {width: 100%; margin-bottom: 5px;}
 	.table2 {width: 100%;}
 	.btnCredit {font-size: 15px; margin-right: 0; display: block; width: 100%;}
-	.main-map {position: absolute; top: 100px; left: 0; margin: 0 15px;}
+	.main-map {position: absolute; top: 100px; left: 0; margin: 0 15px; width:100%;}
 	.main-map img {width: 100%;}
 	.map-detail {margin-top: 360px;}
 }

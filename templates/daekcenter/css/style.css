@@ -141,4 +141,11 @@ ul.nav-left > li:hover > a::before {color: #d23028;}
 .btnCredit {text-transform: uppercase; font-size: 18px; font-weight: bold; padding-right: 30px; padding-left: 30px; margin-top: 20px; margin-right: 10px;}
 .credit h3 {text-transform: uppercase; text-decoration: underline; font-size: 18px; color: #cd0404;}
 .col-md-6 h3{margin:0;}
-
+#radiusSelect{visibility:hidden; height:5px;}
+.form-inline{height:30px;}
+.btnNearme {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+#gf_search_rad_btn{margin-left:13px;}
