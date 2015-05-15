@@ -50,8 +50,12 @@ defined('_JEXEC') or die;
 	JFactory::getDocument()->addScriptDeclaration($js);
 
 	// defaut, il n'y a rien
-	$lat 	= '';
-	$lng 	= '';
+	/*$lat 	= '';
+	$lng 	= '';*/
+	//T.Trung
+	$lat = JRequest::getVar("dla", "");
+	$lng = JRequest::getVar("dln", "");
+	//T.Trung end
 	$adr 	= '';
 
 	// cherche les coordonnées de l'article si deja geocodé

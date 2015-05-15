@@ -21,6 +21,13 @@ $info    = $params->get('info_block_position', 0);*/
 JHtml::_('behavior.caption');
 $map 	= $this->item;
 ?>
+<script language="javascript">
+$(document).ready(function() { 
+	$("#gf_list_MS_JC_id_1 div").each(function(index, element) {
+		console.log( index + ": " + $( this ).text() );
+	});
+});
+</script>
 <section class="sec_search_filter">
 	<div class="row">
 		<?php echo $map->formatedTemplate;?>

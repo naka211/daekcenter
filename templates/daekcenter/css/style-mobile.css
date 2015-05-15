@@ -47,7 +47,6 @@
 @media only screen and (max-width: 360px)  {
 	 .col-xs-6 {width: 100%;}
 	 .opening-hours {  margin-top: 8px;}
-	 
 }
 
 @media screen and (max-width: 768px) {
@@ -64,4 +63,6 @@
 }
 @media screen and (max-width: 360px) {
 	.map-detail {margin-top: 340px;}
+	.main-map {height:360px; width:95%;}
+	#c_gf_1{height: 360px !important;}
 }

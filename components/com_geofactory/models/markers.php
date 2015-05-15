@@ -154,7 +154,7 @@ echo "Ms courant:".$idMs;
 			}else{
 				// cas des MS speciaux pour lequels il y a un traitement spécial
 				$data['spec'][] = $this->_getSpecial($objMs) ;
-			}
+			} 
 			// créé les information de markerset (listes)
 			$data['lists'][] = $this->_getListInfo($objMs, $arIdsMarkers) ; 
 		} 
@@ -546,6 +546,13 @@ var_dump($testArrayDbOk);
 		$query			= $this->_getQueryForMs($oMs) ;
 		$brut			= $this->_getQueryResult($query, $oMs) ;
 
+		//T.Trung
+		$i = 0;
+		foreach($brut as $item){
+			$brut[$i]->title = '<h3>Dækcenter <span class="highlite">'.$item->title.'</span></h3>';
+			$i++;
+		}
+		//T.Trung end
 		$queryForMsg 	= $query ;
 		//echo $queryForMsg; 
 
