@@ -153,7 +153,7 @@ ul.nav-left > li:hover > a::before {color: #d23028;}
 	width:100% !important;
 	height: 283px !important;
 	max-height:283px !important;
-	overflow:hidden !important;
+	overflow-x :hidden !important;
 	border: none !important;
 }
 #gf_list_MS_JC_id_1 h3 { color: #000;font-weight: bold; margin-top: 12px; margin-bottom:0px;}

@@ -8,13 +8,22 @@
  */
 
 defined('_JEXEC') or die;
+$urls    = json_decode($this->item->urls);
 ?>
 {module Breadcrumbs}
 <section class="credit borb mb20 pb30">
 	<div class="row">
 		<div class="col-lg-12">
 			<h1><?php echo $this->escape($this->item->title); ?></h1>
-			<?php echo $this->item->text; ?>
+			
+			<?php if($this->item->id == 10){
+					echo $this->item->text; 
+				} else {
+				$document = JFactory::getDocument();
+				$document->setTitle("AFDELINGER - ".$this->item->title);
+			?>
+			<iframe width="100%" height="800" src="<?php echo $urls->urla;?>" style="border:none"></iframe>
+			<?php }?>
 		</div>
 	</div>
 </section>
