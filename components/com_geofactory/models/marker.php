@@ -42,7 +42,7 @@ class GeofactoryModelMarker extends JModelItem{
 			$objMarker->search		= array() ;
 			$objMarker->id 			= $vIdM[$i] ;
 			$objMarker->type		= $this->m_objMs->typeList ;
-			$objMarker->distance	= $vDist[$i]>0?$vDist[$i]:'';
+			$objMarker->distance	= $vDist[$i]>0?$vDist[$i].' km':'';
 			$objMarker->template 	= $type==1?$this->m_objMs->template_bubble:$this->m_objMs->template_sidebar ;
 
 			// prépare le template, le marker et les remplacements
