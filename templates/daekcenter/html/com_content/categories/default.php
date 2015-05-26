@@ -9,8 +9,6 @@ $query->where($db->quoteName('state') . ' = 1 AND '.$db->quoteName('catid') . ' 
 $db->setQuery($query);
 $stores = $db->loadObjectList();
 ?>
-
-{module Breadcrumbs}
 <div class="template">
 	<section class="departments">
 		<div class="row">
@@ -22,12 +20,12 @@ $stores = $db->loadObjectList();
 					<?php }?>
 				</ul>
 				<div class="tab-content">
-					<?php foreach($this->items[$this->parent->id] as $id => $item) { ?>
+					<?php foreach($this->items[$this->parent->id] as $id => $item) { $i = 0;?>
 					<div id="<?php echo $item->alias;?>" class="tab-pane fade in <?php if($item->alias == JRequest::getVar('region', 'jylland')) echo 'active';?>">
 						<?php foreach($stores as $store){
 							if($store->catid == $item->id){
 						?>
-						<div class="col-md-6 item-departments">
+						<div class="col-md-6 item-departments <?php if($i%2) echo "mr0";?>">
 							<h6>Dækcenter <span class="red"><?php echo $store->title;?></span></h6>
 							<div class="row">
 								<div class="col-md-6">
@@ -36,10 +34,10 @@ $stores = $db->loadObjectList();
 								<div class="col-md-6">
 									<h5>Åbningstider:</h5>
 									<?php echo $store->fulltext;?>
-									<a class="btn btn-seeprice" href="#">Se din dæk pris her <i class="fa fa-angle-double-right fa-lg"></i></a> </div>
+									<a class="btn btn-seeprice" href="<?php echo JURI::base().'index.php?option=com_content&view=article&id='.$store->id;?>">Se din dæk pris her <i class="fa fa-angle-double-right fa-lg"></i></a> </div>
 							</div>
 						</div>
-						<?php }}?>
+						<?php $i++;}}?>
 					</div>
 					<?php }?>
 				</div>

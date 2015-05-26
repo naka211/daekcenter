@@ -546,13 +546,6 @@ var_dump($testArrayDbOk);
 		$query			= $this->_getQueryForMs($oMs) ;
 		$brut			= $this->_getQueryResult($query, $oMs) ;
 
-		//T.Trung
-		$i = 0;
-		foreach($brut as $item){
-			$brut[$i]->title = '<h3>Dækcenter <span class="highlite">'.$item->title.'</span></h3>';
-			$i++;
-		}
-		//T.Trung end
 		$queryForMsg 	= $query ;
 		//echo $queryForMsg; 
 

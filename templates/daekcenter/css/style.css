@@ -110,7 +110,7 @@ a:hover, a:focus, a:active {color: #cc3325;}
 
 
 .template {background: #edeeef; padding: 30px; margin-bottom: 20px;}
-.item-departments {background: #fff; padding: 10px 20px 20px 20px; width: 48.4%; margin-right: 10px; margin-bottom: 10px; float:left;}
+.item-departments {background: #fff; padding: 10px 20px 20px 20px; width: 49.4%; margin-right: 10px; margin-bottom: 10px; float:left; min-height:185px;}
 .item-departments h5 {margin-top: 0; margin-bottom: 5px;}
 .item-departments p {color: #646464;}
 .item-departments .link {margin-bottom: 0; margin-top: 15px;}
@@ -145,10 +145,9 @@ ul.nav-left > li:hover > a::before {color: #d23028;}
 .form-inline{height:30px;}
 .btnNearme {
     display: block;
-    margin-top: 10px;
+    margin-top: -15px;
     width: 100%;
 }
-#gf_search_rad_btn{margin-left:13px;}
 #gf_list_MS_JC_id_1{
 	width:100% !important;
 	height: 283px !important;
@@ -159,3 +158,8 @@ ul.nav-left > li:hover > a::before {color: #d23028;}
 #gf_list_MS_JC_id_1 h3 { color: #000;font-weight: bold; margin-top: 12px; margin-bottom:0px;}
 .gf-sidelist-heading{display:none;}
 .head-tt{margin-bottom:0px;}
+.search-postnr {width: 100%; }
+.form-group{margin-bottom:7px;}
+.pac-container::after{background-image:none;}
+.navbar-nav>li.active a {color: #d23028 !important;background: transparent!important;}
+#c_gf_1{overflow:visible !important;}

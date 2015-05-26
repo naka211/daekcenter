@@ -47,6 +47,7 @@
 @media only screen and (max-width: 360px)  {
 	 .col-xs-6 {width: 100%;}
 	 .opening-hours {  margin-top: 8px;}
+	 
 }
 
 @media screen and (max-width: 768px) {
@@ -54,15 +55,13 @@
 	.departments .nav-tabs > li {width: 100%; margin-bottom: 5px;}
 	.table2 {width: 100%;}
 	.btnCredit {font-size: 15px; margin-right: 0; display: block; width: 100%;}
-	.main-map {position: absolute; top: 100px; left: 0; margin: 0 15px; width:100%;}
+	.main-map {margin: 15px 0; width: 100%;}
 	.main-map img {width: 100%;}
-	.map-detail {margin-top: 360px;}
+	.search-postnr {width: 100%; }
 }
 @media screen and (max-width: 640px) {
-	.map-detail {margin-top: 520px;}
+	.main-map {margin-top: 300px; width: 100%;}
 }
 @media screen and (max-width: 360px) {
-	.map-detail {margin-top: 340px;}
-	.main-map {height:360px; width:95%;}
-	#c_gf_1{height: 360px !important;}
+	.main-map {margin-top: 300px; width: 100%;}
 }

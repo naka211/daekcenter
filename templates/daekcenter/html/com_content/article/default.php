@@ -10,7 +10,9 @@
 defined('_JEXEC') or die;
 $urls    = json_decode($this->item->urls);
 ?>
+<?php if($this->item->id == 10){?>
 {module Breadcrumbs}
+<?php }?>
 <section class="credit borb mb20 pb30">
 	<div class="row">
 		<div class="col-lg-12">
