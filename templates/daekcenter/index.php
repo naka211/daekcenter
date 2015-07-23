@@ -43,6 +43,18 @@ $tmpl = JURI::base().'templates/daekcenter/';
 			$(".parent>a").attr("data-toggle", "dropdown");
 			$(".nav-child").addClass("dropdown-menu");
 			$(".parent>a").append('<b class="caret"></b>');
+			$("#gf_search_rad_btn").hide();
+			
+			$("#gf_near_me").click(function() {
+				jQuery('html, body').animate({
+					scrollTop: jQuery("#radiusSelect").offset().top
+				}, 1000);
+			});
+			$("#addressInput").change(function() {
+				jQuery('html, body').animate({
+					scrollTop: jQuery("#radiusSelect").offset().top
+				}, 1000);
+			});
         });
     </script>
     </head>

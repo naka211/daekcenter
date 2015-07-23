@@ -54,7 +54,7 @@ label { font-weight: normal;}
 .sec_search_filter  {background: #edeeef;  padding: 30px; margin-bottom: 20px;}
 .sec_search_filter > h1 {  font-weight: bold; opacity: 0.8; font-size: 25px; margin-top: 0 0 18px 0;} 
 .sec_search_filter label { color: #646464;}
-.rowForm-searh {margin-bottom: 8px;}
+/*.rowForm-searh {margin-bottom: 8px;}*/
 .rowForm-searh .form-inline .form-group {width: 50%; }
 .rowForm-searh .form-inline .form-control {max-width: 100%;} 
 .rowSelect_land {margin-bottom: 10px;}
@@ -158,7 +158,7 @@ ul.nav-left > li:hover > a::before {color: #d23028;}
 #gf_list_MS_JC_id_1 h3 { color: #000;font-weight: bold; margin-top: 12px; margin-bottom:0px;}
 .gf-sidelist-heading{display:none;}
 .head-tt{margin-bottom:0px;}
-.search-postnr {width: 100%; }
+.search-postnr {width: 100%; margin-bottom:5px; }
 .form-group{margin-bottom:7px;}
 .pac-container::after{background-image:none;}
 .navbar-nav>li.active a {color: #d23028 !important;background: transparent!important;}
